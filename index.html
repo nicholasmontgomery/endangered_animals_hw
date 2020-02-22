@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animals of Europe</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./main.css">
+    <script type="./app.js"></script>
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+
+        <div class="form-item">
+          <label for="species" class="primary">Species</label>
+          <input type="text" id="species" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="habitat" class="primary">Habitat</label>
+          <select id="habitat">
+            <option value="" disabled selected></option>
+            <option value="forest">Forest</option>
+            <option value="grassland">Grassland</option>
+            <option value="mixed">Mixed</option>
+            <option value="ocean">Ocean</option>
+            <option value="moorland">Moorland</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="status" class="primary">Status</label>
+          <select id="status">
+            <option value="" disabled selected></option>
+            <option value="safe">Safe</option>
+            <option value="vulnerable">Vulnerable</option>
+            <option value="endangered">Endangered</option>
+            <option value="critically-endangered">Critically Endangered</option>
+            <option value="extinct">Extinct</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <h1>Animal List</h1>
+    <ul id="animal-list"></ul>
+  </body>
+</html>
